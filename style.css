@@ -197,3 +197,16 @@ body {
   color: #666;
   line-height: 1.5;
 }
+.contacto-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+.container-principal {
+  display: flex;
+  top: 400px;
+}
+.banner {
+  margin: 40px 20px;
+}
