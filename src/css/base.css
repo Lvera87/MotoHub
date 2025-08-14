@@ -26,7 +26,7 @@ button { font-family: inherit; }
 
 /* Normalizar la barra de navegación para que todas las páginas la muestren igual */
 .seccion-nav {
-  height: 72px; /* altura fija para consistencia */
+  height: 90px; /* altura fija para consistencia */
   min-height: 72px;
   display: flex;
   align-items: center;
