@@ -1,0 +1,70 @@
+/* base.css — reset y normalizaciones globales */
+/* Box sizing */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* Resetar márgenes/padding predeterminados */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+/* Tipografía base (heredada por páginas) */
+body {
+  font-family: Inter, 'Segoe UI', Roboto, Arial, sans-serif;
+  color: #222;
+  background: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Normalizar imágenes y botones */
+img { max-width: 100%; display: block; }
+button { font-family: inherit; }
+
+/* Normalizar la barra de navegación para que todas las páginas la muestren igual */
+.seccion-nav {
+  height: 72px; /* altura fija para consistencia */
+  min-height: 72px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0 24px; /* padding horizontal consistente */
+}
+
+/* Logo consistente */
+.logo img {
+  width: 56px;
+  height: 56px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* Forzar la altura de los botones de acción (carrito/avatar) */
+.botones-carrito-buscar {
+  height: 44px;
+  width: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px;
+}
+.botones-carrito-buscar img { width: 28px; height: 28px; }
+
+/* Enlaces del menú */
+.nav-menu li a {
+  padding: 8px 12px;
+  display: inline-block;
+}
+
+/* Asegurar que el nav sticky no cause salto visual entre páginas */
+.seccion-nav[style], .seccion-nav { position: sticky; top: 0; z-index: 100; }
+
+/* Pequeños ajustes responsivos */
+@media (max-width: 680px) {
+  .seccion-nav { height: 64px; padding: 0 12px; }
+  .logo img { width: 48px; height: 48px; }
+  .botones-carrito-buscar { height: 40px; width: 40px; }
+}
