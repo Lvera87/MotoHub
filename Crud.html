@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Crud.css" />
+    <title>CRUD</title>
+  </head>
+  <body>
+    <div class="admin-panel">
+      <!-- Formulario -->
+      <form id="productForm">
+        <label>Nombre del producto:</label>
+        <input type="text" id="productName" />
+
+        <label>Categoría:</label>
+        <input type="text" id="productCategory" />
+
+        <label>Precio:</label>
+        <input type="number" id="productPrice" />
+
+        <label>Imagen (URL):</label>
+        <input type="text" id="productImage" />
+
+        <button type="submit">Agregar producto</button>
+      </form>
+
+      <!-- Vista previa -->
+      <div class="preview">
+        <h3>Vista previa</h3>
+        <div class="product-card" id="previewCard">
+          <img id="previewImage" src="" alt="Imagen del producto" />
+          <h4 id="previewName">Nombre del producto</h4>
+          <p id="previewCategory">Categoría</p>
+          <p id="previewPrice">$0</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

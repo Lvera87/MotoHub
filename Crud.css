@@ -1,0 +1,28 @@
+.admin-panel {
+  display: flex;
+  gap: 30px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 250px;
+}
+
+.preview {
+  border: 1px solid #ddd;
+  padding: 15px;
+  width: 250px;
+}
+
+.product-card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+.product-card img {
+  max-width: 100%;
+  height: auto;
+}
