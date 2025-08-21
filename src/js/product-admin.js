@@ -7,17 +7,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const createImageInput = document.getElementById('create-image-url-input');
     const createBtn = document.getElementById('create-action-button');
 
-    // MODIFY panel
-    const modifyIdInput = document.getElementById('modify-product-id-input');
-    const modifyImageInput = document.getElementById('modify-image-url-input');
-    const modifyLoadBtn = document.getElementById('modify-load-button');
-    const modifyActionBtn = document.getElementById('modify-action-button');
-
-    // DELETE panel
-    const deleteIdInput = document.getElementById('delete-product-id-input');
-    const deleteLoadBtn = document.getElementById('delete-load-button');
-    const deleteActionBtn = document.getElementById('delete-action-button');
-
     // Campos en la tarjeta
     const productImage = document.getElementById('product-image');
     const categoryInput = document.getElementById('category-input');
@@ -28,10 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const priceInput = document.getElementById('price-input');
     const productGrid = document.getElementById('product-grid');
 
-    // Cargar productos al inicio de la página
-    loadProducts();
-
-    // Función para cargar los productos desde localStorage
+    // Función para cargar productos desde localStorage
     function loadProducts() {
         const products = getProducts();
         productGrid.innerHTML = ''; // Limpiar la grid antes de cargar
@@ -40,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Función para obtener productos del localStorage
+    // Función para obtener productos desde localStorage
     function getProducts() {
         const products = JSON.parse(localStorage.getItem('motohub_products')) || [];
         return products;
@@ -132,5 +118,4 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     if (createImageInput) createImageInput.addEventListener('input', () => trySetPreview(createImageInput.value));
-    if (modifyImageInput) modifyImageInput.addEventListener('input', () => trySetPreview(modifyImageInput.value));
 });
