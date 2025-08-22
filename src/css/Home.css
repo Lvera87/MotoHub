@@ -174,3 +174,241 @@ body {
   margin: 30px 120px;
 }
 
+.footer {
+  background-color: #1c1c1c;
+  color: #cccccc;
+  font-family: sans-serif;
+  padding: 40px 20px 20px;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4, .footer-col-5 {
+  padding: 20px;
+  border-radius: 8px; /* Bordes redondeados para un look moderno */
+  transition: transform 0.3s ease; /* Efecto al pasar el mouse */
+}
+
+/* Efecto de "lift" al pasar el mouse sobre las secciones */
+.footer-col-1:hover, .footer-col-2:hover, .footer-col-3:hover, .footer-col-4:hover, .footer-col-5:hover {
+    transform: translateY(-5px);
+}
+
+/* Colores de fondo personalizados para cada sección */
+.custom-bg-1 {
+  background-color: #F24150;
+}
+
+.custom-bg-2 {
+  background-color: #39AB4A;
+}
+
+.custom-bg-3 {
+  background-color: #75C6CF;
+}
+
+.custom-bg-4 {
+  background-color: #F25430;
+}
+
+.custom-bg-5 {
+  background-color: #F9B02F;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.company-slogan {
+  font-size: 14px;
+  font-family: Verdana , Geneva, Tahoma, sans-serif, sans-serif;
+  color: #ffffff;
+  margin-top: 10px;
+}
+
+/* Estilos para el contenedor del logo/icono */
+.footer-logo-container {
+  margin-bottom: 15px; /* Espaciado con respecto al texto siguiente */
+}
+
+.footer-logo-container a {
+  display: inline-block;
+  font-size: 30px; /* Tamaño del icono */
+  color: #cccccc;
+  transition: color 0.3s ease;
+}
+
+.footer-logo-container img {
+  width: 100px; /* Tamaño de la imagen */
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.footer-logo-container a:hover {
+  color: #fff;
+}
+
+.footer-logo-container img:hover {
+  transform: scale(1.1); /* Efecto al pasar el mouse sobre la imagen */
+}
+
+.footer-logo-container1 img {
+  width: 150px; /* Tamaño de la imagen */
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.footer-logo-container1 a:hover {
+  color: #2908083f;
+}
+
+.footer-logo-container1 img:hover {
+  transform: scale(1.1); /* Efecto al pasar el mouse sobre la imagen */
+}
+
+
+
+
+.footer-logo-container2 img {
+  width: 200px; /* Tamaño de la imagen */
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.footer-logo-container a:hover {
+  color: #2908083f;
+}
+
+.footer-logo-container2 img:hover {
+  transform: scale(1.1); /* Efecto al pasar el mouse sobre la imagen */
+}
+
+.footer-logo-container3 img {
+  width: 200px; /* Tamaño de la imagen */
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.footer-logo-container3 a:hover {
+  color: #2908083f;
+}
+
+.footer-logo-container3 img:hover {
+  transform: scale(1.1); /* Efecto al pasar el mouse sobre la imagen */
+}
+
+
+.footer-logo-container4 img {
+  width: 220px; /* Tamaño de la imagen */
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.footer-logo-container4 a:hover {
+  color: #2908083f;
+}
+
+.footer-logo-container4 img:hover {
+  transform: scale(1.1); /* Efecto al pasar el mouse sobre la imagen */
+}
+
+
+
+
+
+
+
+.footer-logo-container5 img {
+  width: 220px; /* Tamaño de la imagen */
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.footer-logo-container5 a:hover {
+  color: #2908083f;
+}
+
+.footer-logo-container5 img:hover {
+  transform: scale(1.1); /* Efecto al pasar el mouse sobre la imagen */
+}
+
+
+
+
+
+
+
+
+
+.footer h4 {
+  font-size: 16px;
+  margin-bottom: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: white;
+}
+
+.footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer ul li {
+  margin-bottom: 8px;
+}
+
+.footer ul li a {
+  color: #cccccc;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.footer ul li a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  margin-top: 40px;
+  padding-top: 20px;
+}
+
+.footer-bottom p {
+  font-size: 13px;
+  margin: 0;
+  color: #999999;
+}
+
+/* Diseño responsivo */
+@media (max-width: 992px) {
+  .footer-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+}
