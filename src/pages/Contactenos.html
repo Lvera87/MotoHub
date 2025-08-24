@@ -13,8 +13,14 @@
         <div class="logo">
         <img src="/src/assets/images/logo.png" alt="Logo MotoHub" />
     </div>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+        <label for="nav-toggle" class="nav-toggle-label" aria-label="Abrir menú">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </label>
         <nav class="navbar">
-        <ul class="nav-menu">
+        <ul class="nav-menu" id="nav-menu">
             <li><a href="/src/pages/index.html">Inicio</a></li>
             <li><a href="/src/pages/index.html">Catálogo</a></li>
             <li><a href="/src/pages/acercaNosotros.html">Servicios</a></li>
@@ -40,7 +46,7 @@
     <div class="centered-container">
         <div class="contact-card">
             <div class="image-section">
-                <video class="contact-image" src="/src/assets/videos/Img01.mp4" autoplay loop muted playsinline poster="asets/img/Img01.jpg"></video>
+                <video class="contact-image" src="/src/assets/videos/Img01.mp4" autoplay loop muted playsinline poster="/src/assets/images/prototipo-A-N.png"></video>
             </div>
             <div class="form-section">
                 <form id="contactForm" novalidate autocomplete="off">
@@ -90,7 +96,7 @@
                 </form>
 
                 <div id="alertaExito" class="alerta-exito" role="alert" aria-live="polite">¡Gracias! Tu mensaje ha sido enviado.</div>
-    
-</head>
-
+    </div>
+    </div>
+</body>
 </html>
