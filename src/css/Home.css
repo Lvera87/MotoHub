@@ -18,22 +18,51 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: var(--fuente);
   background: #fff;
   color: #1a1919;
   text-align: center;
 }
 
-/* home-header eliminado: usamos navbar.css compartido */
-
+/* Centralized navbar styles */
 .hero {
   width: 100%;
   height: 400px;
-  padding: 40px 470px;
-  background-image: url(/src/assets/images/hero.png);
+  padding: 80px 20px;
+  position: relative;
+  background-image: url(/src/assets/images/logo.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+/* Overlay for improved readability */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0,0,0,0.35), rgba(0,0,0,0.15));
+  pointer-events: none;
+}
+
+/* Responsive hero */
+@media (max-width: 992px) {
+  .hero {
+    height: 360px;
+    padding: 60px 16px;
+    background-position: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero {
+    height: 320px;
+    padding: 40px 12px;
+  }
+  .seccion-hero {
+    padding: 16px;
+    border-radius: 14px;
+  }
 }
 
 .seccion-hero {
@@ -43,6 +72,8 @@ body {
   -webkit-backdrop-filter: blur(10px);
   color: #ddd;
   border-radius: 20px;
+  position: relative;
+  z-index: 1; /* Above overlay */
 }
 
 .titulo-hero {
@@ -81,6 +112,7 @@ body {
   background: #ccc;
   gap: 10px;
 }
+
 .img-prod {
   max-width: 100%;
   height: auto;
@@ -105,14 +137,17 @@ body {
   margin: 35px 10px;
   border-radius: 10px;
 }
+
 #btn-comprar {
   border: solid 2px #ffffff;
   color: #ffffff;
   background-color: #f24150;
 }
+
 #btn-explorar {
   border: solid 2px #39ab4a;
 }
+
 .prod {
   background: #ccc;
   padding: 15px;
@@ -175,16 +210,16 @@ body {
 
 .footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4, .footer-col-5 {
   padding: 20px;
-  border-radius: 8px; /* Bordes redondeados para un look moderno */
-  transition: transform 0.3s ease; /* Efecto al pasar el mouse */
+  border-radius: 8px;
+  transition: transform 0.3s ease;
 }
 
-/* Efecto de "lift" al pasar el mouse sobre las secciones */
+/* Lift effect on hover */
 .footer-col-1:hover, .footer-col-2:hover, .footer-col-3:hover, .footer-col-4:hover, .footer-col-5:hover {
-    transform: translateY(-5px);
+  transform: translateY(-5px);
 }
 
-/* Colores de fondo personalizados para cada sección */
+/* Footer color helpers */
 .custom-bg-1 {
   background-color: #F24150;
 }
@@ -214,25 +249,25 @@ body {
 
 .footer .company-slogan {
   font-size: 14px;
-  font-family: Verdana , Geneva, Tahoma, sans-serif, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: #ffffff;
   margin-top: 10px;
 }
 
-/* Estilos para el contenedor del logo/icono */
+/* Footer logo container */
 .footer-logo-container {
-  margin-bottom: 15px; /* Espaciado con respecto al texto siguiente */
+  margin-bottom: 15px;
 }
 
 .footer-logo-container a {
   display: inline-block;
-  font-size: 30px; /* Tamaño del icono */
+  font-size: 30px;
   color: #cccccc;
   transition: color 0.3s ease;
 }
 
 .footer-logo-container img {
-  width: 100px; /* Tamaño de la imagen */
+  width: 100px;
   height: auto;
   transition: transform 0.3s ease;
 }
@@ -242,11 +277,11 @@ body {
 }
 
 .footer-logo-container img:hover {
-  transform: scale(1.1); /* Efecto al pasar el mouse sobre la imagen */
+  transform: scale(1.1);
 }
 
 .footer-logo-container1 img {
-  width: 150px; /* Tamaño de la imagen */
+  width: 150px;
   height: auto;
   transition: transform 0.3s ease;
 }
@@ -256,14 +291,11 @@ body {
 }
 
 .footer-logo-container1 img:hover {
-  transform: scale(1.1); /* Efecto al pasar el mouse sobre la imagen */
+  transform: scale(1.1);
 }
 
-
-
-
 .footer-logo-container2 img {
-  width: 200px; /* Tamaño de la imagen */
+  width: 200px;
   height: auto;
   transition: transform 0.3s ease;
 }
@@ -273,11 +305,11 @@ body {
 }
 
 .footer-logo-container2 img:hover {
-  transform: scale(1.1); /* Efecto al pasar el mouse sobre la imagen */
+  transform: scale(1.1);
 }
 
 .footer-logo-container3 img {
-  width: 200px; /* Tamaño de la imagen */
+  width: 200px;
   height: auto;
   transition: transform 0.3s ease;
 }
@@ -287,12 +319,11 @@ body {
 }
 
 .footer-logo-container3 img:hover {
-  transform: scale(1.1); /* Efecto al pasar el mouse sobre la imagen */
+  transform: scale(1.1);
 }
 
-
 .footer-logo-container4 img {
-  width: 220px; /* Tamaño de la imagen */
+  width: 220px;
   height: auto;
   transition: transform 0.3s ease;
 }
@@ -302,17 +333,11 @@ body {
 }
 
 .footer-logo-container4 img:hover {
-  transform: scale(1.1); /* Efecto al pasar el mouse sobre la imagen */
+  transform: scale(1.1);
 }
 
-
-
-
-
-
-
 .footer-logo-container5 img {
-  width: 220px; /* Tamaño de la imagen */
+  width: 220px;
   height: auto;
   transition: transform 0.3s ease;
 }
@@ -322,14 +347,8 @@ body {
 }
 
 .footer-logo-container5 img:hover {
-  transform: scale(1.1); /* Efecto al pasar el mouse sobre la imagen */
+  transform: scale(1.1);
 }
-
-
-
-
-
-
 
 
 
