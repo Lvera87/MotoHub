@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carrito - MotoHub</title>
+    <link rel="stylesheet" href="/src/css/base.css" />
+    <link rel="stylesheet" href="/src/css/carrito.css" />
+  </head>
+  <body>
+    <header class="carrito-page-header">
+      <div class="carrito-page-header__left">
+        <a href="/src/pages/Home.html" class="btn-link" aria-label="Volver al inicio">← Inicio</a>
+      </div>
+      <h1 class="carrito-page-title">Tu Carrito</h1>
+      <div class="carrito-page-header__right">
+        <button id="open-cart" class="btn-primario" aria-label="Abrir carrito">Abrir carrito</button>
+      </div>
+    </header>
+
+    <main class="carrito-page-main">
+      <p class="hint">
+        Esta es una vista independiente del carrito. Puedes abrir/cerrar el panel
+        lateral con el botón de arriba. Más adelante podremos enlazar el botón
+        de carrito del navbar para venir aquí o abrir directamente el panel.
+      </p>
+    </main>
+
+    <!-- Overlay -->
+    <div id="cart-overlay" class="cart-overlay" hidden></div>
+
+    <!-- Panel lateral del carrito -->
+    <aside id="cart-panel" class="cart-panel" aria-hidden="true" aria-labelledby="cart-title" role="dialog">
+      <header class="cart-header">
+        <h2 id="cart-title">Carrito</h2>
+        <button id="close-cart" class="btn-icon" aria-label="Cerrar carrito">✕</button>
+      </header>
+
+      <section class="cart-items" aria-live="polite">
+        <article class="cart-item">
+          <img src="/src/assets/images/logo.png" alt="Producto" class="item-thumb" />
+          <div class="item-info">
+            <h3 class="item-title">Producto de ejemplo</h3>
+            <div class="item-meta">
+              <span class="item-price">$120.000</span>
+              <div class="item-qty">
+                <button class="qty-btn" data-action="dec" aria-label="Disminuir">−</button>
+                <input class="qty-input" type="number" value="1" min="1" aria-label="Cantidad" />
+                <button class="qty-btn" data-action="inc" aria-label="Aumentar">+</button>
+              </div>
+            </div>
+          </div>
+          <button class="eliminar" aria-label="Quitar">Eliminar</button>
+        </article>
+      </section>
+
+      <footer class="cart-footer">
+        <div class="cart-totals">
+          <span>Subtotal</span>
+          <strong class="subtotal" id="subtotal">$120.000</strong>
+        </div>
+        <div class="cart-actions">
+          <a class="btn-secundario" href="/src/pages/Home.html">Seguir comprando</a>
+          <button class="btn-primario" id="checkout">Proceder al pago</button>
+        </div>
+      </footer>
+    </aside>
+
+    <script src="/src/js/cart.js"></script>
+  </body>
+</html>
