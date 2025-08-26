@@ -136,3 +136,42 @@ button {
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
+
+/* Banner con video de fondo */
+.banner-video {
+  position: relative;
+  width: 100%;
+  height: 350px; /* puedes subirlo a 400px/500px */
+  overflow: hidden;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.banner-video-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* ajusta el video al contenedor */
+  z-index: 1;
+}
+
+.banner-video-content {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+  text-shadow: 0px 2px 8px rgba(0,0,0,0.6);
+}
+
+.banner-video-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.banner-video-content p {
+  font-size: 1.2rem;
+}
