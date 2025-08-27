@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MotoHub - Misión, Visión y Valores</title>
+    <title>Acerca de nosotros</title>
   <link rel="stylesheet" href="/src/css/base.css" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
   />
@@ -21,16 +21,10 @@
     <body>
       <div class="seccion-nav">
           <div class="logo">
-            <img src="/src/assets/images/logo.png" alt="Logo MotoHub" />
+            <img src="/src/assets/images/Logo2.jpeg" alt="Logo MotoHub" />
           </div>
-      <input type="checkbox" id="nav-toggle" class="nav-toggle" />
-      <label for="nav-toggle" class="nav-toggle-label" aria-label="Abrir menú">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </label>
       <nav class="navbar">
-        <ul class="nav-menu" id="nav-menu">
+        <ul class="nav-menu">
           <li><a href="/src/pages/index.html">Inicio</a></li>
           <li><a href="/src/pages/index.html">Catálogo</a></li>
           <li><a href="/src/pages/acercaNosotros.html">Servicios</a></li>
@@ -47,21 +41,13 @@
         </button>
       </div>
     </div>
-    <div class="px-4 pt-5 my-5 text-center border-bottom">
-      <h1 class="display-4 fw-bold text-body-emphasis">Acerca de MotoHub</h1>
-      <div class="col-lg-6 mx-auto">
+    <div class="seccion-acerca">
+      <h1 class="titulo-acercade">Acerca de MotoHub</h1>
+      <div class="descripcion">
         <p class="lead mb-4">
-          MotoHub es tu destino principal para todo lo relacionado con
-          motocicletas. Ofrecemos una amplia gama de servicios.
+          MotoHub fue creado para ser tu lugar de confianza, pensando en todo lo relacionado con motocicletas. 
+          Ofreciendote productos, asesoría y servicios de alta calidad para que disfrutes al máximo tu pasión por las dos ruedas.
         </p>
-        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
-          <button type="button" class="btn btn-primary btn-lg px-4 me-sm-3">
-            Nuestros Servicios
-          </button>
-          <button type="button" class="btn btn-outline-secondary btn-lg px-4">
-            Contáctanos
-          </button>
-        </div>
       </div>
       <div class="overflow-hidden" style="max-height: 40vh">
         <div class="container px-5">
@@ -69,9 +55,9 @@
             <div class="col-md-4 mb-4">
               <div class="card h-100">
                 <div class="card-body">
-                  <h5 class="card-title">Accesorios para Tu Moto</h5>
+                  <h5 class="card-title">Accesorios para tu moto</h5>
                   <p class="card-text">
-                    Amplio catálogo de Accesorios de todas la marcas.
+                    Explora nuestro amplio catálogo de accesorios originales y genéricos para todo tipo de motos.
                   </p>
                 </div>
               </div>
@@ -79,9 +65,10 @@
             <div class="col-md-4 mb-4">
               <div class="card h-100">
                 <div class="card-body">
-                  <h5 class="card-title">Accesorios Pilotos</h5>
+                  <h5 class="card-title">Accesorios Pilotos y Copilotos</h5>
                   <p class="card-text">
-                    Todo tipo de elementos 
+                    Encuentra todo el equipamiento que necesitas para rodar con seguridad y estilo. 
+                    Cascos, guantes, protecciones y más, diseñados para brindar comodidad y confianza tanto a pilotos como a copilotos.
                   </p>
                 </div>
               </div>
@@ -91,7 +78,8 @@
                 <div class="card-body">
                   <h5 class="card-title">Asesoria Personalizada</h5>
                   <p class="card-text">
-                    Asesoria personalizada para la compra de tus elementos como piloto.
+                    Recibe orientación experta para elegir los accesorios, equipos y productos 
+                    que realmente se adapten a tus necesidades y estilo de conducción.
                   </p>
                 </div>
               </div>
@@ -120,9 +108,8 @@
           </div>
           <h3 class="feature-title">VISIÓN</h3>
           <p class="feature-text">
-            Queremos ser la tienda de confianza para los motociclistas, no solo
-            en nuestra ciudad, sino en todo el país y más adelante en otros
-            lugares de Latinoamérica.
+            Queremos ser la tienda de confianza para los motociclistas, dentro y fuera de la ciudad principal,
+            y en un futuro de 5 años en mas lugares de Latinoamérica.
           </p>
         </div>
       </div>
@@ -140,39 +127,48 @@
         </div>
       </div>
     </div>
-    <!-- seccion-Angel-Inicio -->
+    <!-- seccion-personas -->
+    <section class="carrusel">
+      <button class="btn prev">&#10094;</button>
+      
+      <div class="carrusel-container">
+        <div>
+          <img class="img-perfil" src="/src/assets/images/sergioG.jpg" alt="" />
+          <h2>Sergio Andres Mesa</h2>
+            <p>
+              Hola soy Sergio Andres Mesa, Ingeniero de Sistemas y desarrollador web.
+            <p>Enfoque principal: Backend.</p>
+          </p>
+        </div>
+      <div>
+          <img class="img-perfil" src="/src/assets/images/luisV.png" alt="" />
+            <h2>Luis Vera</h2>
+            <p>
+              Hola soy Luis Vera, Ingeniero Civil y desarrollador web.
+            <p>Enfoque principal: Backend.</p>
+          </p>
+      </div>
+      <div>
+          <img class="img-perfil" src="/src/assets/images/Yohana2.png" alt="" />
+            <h2>Yohana Villarraga</h2>
+          <p>
+            Hola soy Yohana Villarraga, Tecnologa en desarrollo de software.
+          <p>Enfoque principal: Frontend.</p>
+        </p>
+      </div>
+      <div>
+          <img class="img-perfil" src="/src/assets/images/Angel2.png" alt="" />
+            <h2>Angel Rodriguez</h2>
+          <p>
+            Hola soy Angel Rodriguez, Tecnologo en desarrollo de software.
+          <p>Enfoque principal: Frontend.</p>
+        </p>
+      </div>
+      </div>
 
-    <div class="container-personas">
-      <div>
-        <img class="img-perfil" src="/src/assets/images/sergioG.jpg" alt="" />
-        <h2>Sergio Andres Mesa</h2>
-        <p>
-          Hola soy Sergio Andres Mesa
-        </p>
-      </div>
-      <div>
-        <img class="img-perfil" src="./asets/img/Angel.jpg" alt="" />
-        <h2>Luis Vera</h2>
-        <p>
-          Hola soy Luis Vera
-        </p>
-      </div>
-      <div>
-        <img class="img-perfil" src="/src/assets/images/YohanaG.jpg" alt="" />
-        <h2>Yohana Villarraga</h2>
-        <p>
-          Hola soy Yohana Villarraga
-        </p>
-      </div>
-      <div>
-        <img class="img-perfil" src="/src/assets/images/Angel.jpg" alt="" />
-        <h2>Angel Rodriguez</h2>
-        <p>
-          Hola soy Angel Rodriguez
-        </p>
-      </div>
-    </div>
-    <!-- seccion-Angel-Fin -->
+      <button class="btn next">&#10095;</button>
+    </section>
+    <!-- seccion-personas -->
 
     <section>
       <h2>Por qué elegirnos</h2>
@@ -187,11 +183,10 @@
         ¿Quieres saber más sobre nuestro trabajo? Visita la tienda o
         contáctanos.
       </p>
-
-      <button class="button">Ver productos</button>
     </section>
 
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="/src/js/cart.js"></script>
+    <script src="/src/js/acercaDecarrusel.js"></script>
   </body>
 </html>

@@ -34,7 +34,7 @@ body.no-scroll {
   background: rgba(66, 65, 65, 0.696);
   color: var(--cart-text);
   border-left: 1px solid rgb(244, 97, 23);
-  box-shadow: -12px 0 88px 20px rgba(213, 49, 16, 0.35);
+  box-shadow: -12px 0 88px 20px rgba(233, 231, 231, 0.35);
   transform: translateX(100%);
   transition: transform 250ms ease;
   display: grid;
