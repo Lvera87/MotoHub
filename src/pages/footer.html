@@ -1,78 +1,112 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../css/footer.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Footer Moderno</title>
+  <link rel="stylesheet" href="../css/footer.css">
+  <!-- Google Fonts Bebas Neue -->
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
     
 <footer class="footer">
+
+  <!-- Bloque superior con rojo + formulario -->
+  <div class="footer-top">
+  <!-- Bloque rojo -->
+  <div class="footer-designed">
+    <h2>DISEÑADA</h2>
+    <p>
+      Sergio Mesa <br>
+      Angel Rodriguez <br>
+      Luis Vera <br>
+      Johana Villaraga
+    </p>
+  </div>
+
+     <!-- Bloque derecho con video y formulario -->
+  <div class="footer-feedback-container">
+    <!-- Video de fondo -->
+    <video autoplay muted loop playsinline class="footer-video">
+      <source src="../assets/videos/moto.mp4" type="video/mp4">
+      Tu navegador no soporta videos HTML5.
+    </video>
+
+    <!-- Formulario -->
+    <div class="footer-feedback">
+      <h3>¿Tienes observaciones o sugerencias?</h3>
+      <form class="footer-form" action="mailto:info@tuempresa.com" method="post" enctype="text/plain">
+        <input type="email" name="correo" placeholder="Tu correo electrónico" required>
+        <textarea name="mensaje" placeholder="Escribe tu mensaje aquí..." required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+  <!-- Footer normal -->
   <div class="footer-container">
-       
     <div class="footer-col-1 custom-bg-1">
-      <h3 class="logo"></h3>
       <div class="footer-logo-container1">
-        <a href="#"><img src="../assets/images/logo_sin_fondo.png" alt="Icono de productos"></a>
+        <a href="#"><img src="../assets/images/logo_sin_fondo.png" alt="Logo Empresa"></a>
       </div>
+      <p class="company-slogan">Innovando con ideas, transformando el futuro digital.</p>
       <div class="footer-logo-container1">
         <a href="#"><i class="fab fa-github"></i></a>
       </div>
-      
     </div>
-    
+
     <div class="footer-col-2 custom-bg-2">
-      <h4></h4>
+      <h4>Contacto</h4>
       <div class="footer-logo-container2">
-        <a href="#"><img src="../assets/images/gmail.png" alt="Icono de productos"></a>
+        <a href="#"><img src="../assets/images/gmail.png" alt="Gmail"></a>
       </div>
       <ul>
-       
+        <li><a href="mailto:info@tuempresa.com">info@tuempresa.com</a></li>
+        <li><a href="tel:+573001112233">+57 300 111 22 33</a></li>
       </ul>
     </div>
 
-      <div class="footer-col-2 custom-bg-3">
-      <h4></h4>
+    <div class="footer-col-2 custom-bg-3">
+      <h4>Facebook</h4>
       <div class="footer-logo-container3">
-        <a href="#"><img src="../assets/images/facebook.png" alt="Icono de productos"></a>
+        <a href="#"><img src="../assets/images/facebook.png" alt="Facebook"></a>
       </div>
       <ul>
-        
+        <li><a href="#">Síguenos en Facebook</a></li>
       </ul>
     </div>
-    
-   
-    
-     <div class="footer-col-2 custom-bg-4">
-      <h4></h4>
+
+    <div class="footer-col-2 custom-bg-4">
+      <h4>LinkedIn</h4>
       <div class="footer-logo-container4">
-        <a href="#"><img src="../assets/images/linkedlin.png" alt="Icono de productos"></a>
+        <a href="#"><img src="../assets/images/linkedlin.png" alt="LinkedIn"></a>
       </div>
       <ul>
-        
+        <li><a href="#">Conéctate con nosotros</a></li>
       </ul>
     </div>
 
-     <div class="footer-col-2 custom-bg-5">
-      <h4></h4>
+    <div class="footer-col-2 custom-bg-5">
+      <h4>Instagram</h4>
       <div class="footer-logo-container5">
-        <a href="#"><img src="../assets/images/instagram.png" alt="Icono de productos"></a>
+        <a href="#"><img src="../assets/images/instagram.png" alt="Instagram"></a>
       </div>
       <ul>
-        
+        <li><a href="#">Síguenos en Instagram</a></li>
       </ul>
     </div>
-
   </div>
+
+  <!-- Copy -->
   <div class="footer-bottom">
     <p>&copy; 2025 Tu Empresa. Todos los derechos reservados.</p>
   </div>
 </footer>
-
-
-
-
 
 </body>
 </html>
