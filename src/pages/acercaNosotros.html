@@ -18,33 +18,39 @@
     rel="stylesheet"
     />
 </head>
-    <body>
+    <body class="body-fondo">
       <div class="seccion-nav">
-          <div class="logo">
-            <img src="/src/assets/images/Logo2.jpeg" alt="Logo MotoHub" />
-          </div>
-      <nav class="navbar">
-        <ul class="nav-menu">
-          <li><a href="/src/pages/index.html">Inicio</a></li>
-          <li><a href="/src/pages/index.html">Catálogo</a></li>
-          <li><a href="/src/pages/acercaNosotros.html">Servicios</a></li>
-          <li><a href="/src/pages/Contactenos.html">Contacto</a></li>
-          <li><a href="/src/pages/acercaNosotros.html">Acerca de</a></li>
+        <div class="logo">
+        <img src="/src/assets/images/Logosinfondo.png" alt="Logo MotoHub" />
+    </div>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+        <label for="nav-toggle" class="nav-toggle-label" aria-label="Abrir menú">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </label>
+        <nav class="navbar">
+        <ul class="nav-menu" id="nav-menu">
+            <li><a href="/src/pages/index.html">Inicio</a></li>
+            <li><a href="/src/pages/index.html">Catálogo</a></li>
+            <li><a href="/src/pages/acercaNosotros.html">Servicios</a></li>
+            <li><a href="/src/pages/Contactenos.html">Contacto</a></li>
+            <li><a href="/src/pages/acercaNosotros.html">Acerca de</a></li>
         </ul>
-      </nav>
-      <div class="">
+    </nav>
+    <div class="">
         <button class="botones-carrito-buscar" aria-label="Carrito">
-          <img src="/src/assets/images/carrito-de-compras.png" class="carrito" alt="Carrito" />
+            <img src="/src/assets/images/carrito-de-compras.png" class="carrito" alt="Carrito" />
         </button>
         <button class="botones-carrito-buscar" aria-label="Cuenta">
-          <img src="/src/assets/images/avatar.png" class="avatar" alt="Avatar" />
+            <img src="/src/assets/images/avatar.png" class="avatar" alt="Avatar" />
         </button>
-      </div>
+    </div>
     </div>
     <div class="seccion-acerca">
       <h1 class="titulo-acercade">Acerca de MotoHub</h1>
       <div class="descripcion">
-        <p class="lead mb-4">
+        <p class="descripcion-texto">
           MotoHub fue creado para ser tu lugar de confianza, pensando en todo lo relacionado con motocicletas. 
           Ofreciendote productos, asesoría y servicios de alta calidad para que disfrutes al máximo tu pasión por las dos ruedas.
         </p>
@@ -55,7 +61,7 @@
             <div class="col-md-4 mb-4">
               <div class="card h-100">
                 <div class="card-body">
-                  <h5 class="card-title">Accesorios para tu moto</h5>
+                  <h5 class="card-titulo">Accesorios para tu moto</h5>
                   <p class="card-text">
                     Explora nuestro amplio catálogo de accesorios originales y genéricos para todo tipo de motos.
                   </p>
@@ -65,7 +71,7 @@
             <div class="col-md-4 mb-4">
               <div class="card h-100">
                 <div class="card-body">
-                  <h5 class="card-title">Accesorios Pilotos y Copilotos</h5>
+                  <h5 class="card-titulo">Accesorios Pilotos y Copilotos</h5>
                   <p class="card-text">
                     Encuentra todo el equipamiento que necesitas para rodar con seguridad y estilo. 
                     Cascos, guantes, protecciones y más, diseñados para brindar comodidad y confianza tanto a pilotos como a copilotos.
@@ -76,7 +82,7 @@
             <div class="col-md-4 mb-4">
               <div class="card h-100">
                 <div class="card-body">
-                  <h5 class="card-title">Asesoria Personalizada</h5>
+                  <h5 class="card-titulo">Asesoria Personalizada</h5>
                   <p class="card-text">
                     Recibe orientación experta para elegir los accesorios, equipos y productos 
                     que realmente se adapten a tus necesidades y estilo de conducción.
@@ -90,36 +96,36 @@
     </div>
     <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
       <div class="col">
-        <div class="feature-card">
-          <div class="feature-icon">
+        <div class="caracteristica-card">
+          <div class="caracteristica-icono">
             <i class="bi bi-bullseye"></i>
           </div>
-          <h3 class="feature-title">MISIÓN</h3>
-          <p class="feature-text">
+          <h3 class="caract-titulo">MISIÓN</h3>
+          <p class="caract-texto">
             Brindar a los motociclistas una experiencia de compra confiable y
             especializada.
           </p>
         </div>
       </div>
       <div class="col">
-        <div class="feature-card">
-          <div class="feature-icon">
+        <div class="caracteristica-card">
+          <div class="caracteristica-icono">
             <i class="bi bi-eye"></i>
           </div>
-          <h3 class="feature-title">VISIÓN</h3>
-          <p class="feature-text">
+          <h3 class="caract-titulo">VISIÓN</h3>
+          <p class="caract-texto">
             Queremos ser la tienda de confianza para los motociclistas, dentro y fuera de la ciudad principal,
             y en un futuro de 5 años en mas lugares de Latinoamérica.
           </p>
         </div>
       </div>
       <div class="col">
-        <div class="feature-card">
-          <div class="feature-icon">
+        <div class="caracteristica-card">
+          <div class="caracteristica-icono">
             <i class="bi bi-lightbulb"></i>
           </div>
-          <h3 class="feature-title">VALORES</h3>
-          <p class="feature-text">
+          <h3 class="caract-titulo">VALORES</h3>
+          <p class="caract-texto">
             * Confianza <br />
             * Cumplimiento <br />
             * Actualización
@@ -128,12 +134,9 @@
       </div>
     </div>
     <!-- seccion-personas -->
-    <section class="carrusel">
-      <button class="btn prev">&#10094;</button>
-      
-      <div class="carrusel-container">
-        <div>
-          <img class="img-perfil" src="/src/assets/images/sergioG.jpg" alt="" />
+    <div class="personas">
+      <div>
+          <img class="img-perfil" src="/src/assets/images/Serg.jpg" alt="" />
           <h2>Sergio Andres Mesa</h2>
             <p>
               Hola soy Sergio Andres Mesa, Ingeniero de Sistemas y desarrollador web.
@@ -141,15 +144,15 @@
           </p>
         </div>
       <div>
-          <img class="img-perfil" src="/src/assets/images/luisV.png" alt="" />
-            <h2>Luis Vera</h2>
+          <img class="img-perfil" src="/src/assets/images/Luis.jpeg" alt="" />
+          <h2>Luis Vera</h2>
             <p>
               Hola soy Luis Vera, Ingeniero Civil y desarrollador web.
             <p>Enfoque principal: Backend.</p>
           </p>
       </div>
       <div>
-          <img class="img-perfil" src="/src/assets/images/Yohana2.png" alt="" />
+          <img class="img-perfil" src="/src/assets/images/Yoha.jpg" alt="" />
             <h2>Yohana Villarraga</h2>
           <p>
             Hola soy Yohana Villarraga, Tecnologa en desarrollo de software.
@@ -157,36 +160,27 @@
         </p>
       </div>
       <div>
-          <img class="img-perfil" src="/src/assets/images/Angel2.png" alt="" />
+          <img class="img-perfil" src="/src/assets/images/Angell.jpg" alt="" />
             <h2>Angel Rodriguez</h2>
           <p>
             Hola soy Angel Rodriguez, Tecnologo en desarrollo de software.
           <p>Enfoque principal: Frontend.</p>
         </p>
       </div>
-      </div>
+    </div>
 
-      <button class="btn next">&#10095;</button>
-    </section>
-    <!-- seccion-personas -->
-
-    <section>
+    <footer class="footer">
       <h2>Por qué elegirnos</h2>
-
       <div class="palabras">
         <div class="palabra">↗ Envíos rápidos</div>
         <div class="palabra">👤 Productos certificados</div>
         <div class="palabra">+500 clientes satisfechos</div>
       </div>
-
       <p>
         ¿Quieres saber más sobre nuestro trabajo? Visita la tienda o
         contáctanos.
       </p>
-    </section>
-
-
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="/src/js/acercaDecarrusel.js"></script>
   </body>
 </html>
