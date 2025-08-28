@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <title>Login</title>
+  <link rel="stylesheet" href="../css/login.css">
 </head>
-<body>
+<body class="login-page">
   <h2>Iniciar Sesión</h2>
   <form id="loginForm">
     <input type="email" id="email" placeholder="Correo electrónico" required><br>
@@ -12,12 +13,12 @@
     <button type="submit">Ingresar</button>
   </form>
 
-  <div id="mensaje" style="color:red; margin-top:10px;"></div>
+  <div id="mensaje"></div>
 
   <br>
-  <button onclick="window.location.href='form.html'">Registrarse</button>
+  <button class="secondary-btn" onclick="window.location.href='form.html'">Registrarse</button>
 
   
 </body>
-<script src="/src/js/login.js"></script>
+<script src="../js/login.js"></script>
 </html>
