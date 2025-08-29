@@ -49,13 +49,13 @@
     color: azure;
 }
 
-/* Hamburguesa (CSS-only) */
+
 .nav-toggle {
-    display: none; /* oculto el checkbox */
+    display: none; 
 }
 
 .nav-toggle-label {
-    display: none; /* visible solo en móvil */
+    display: none;
     cursor: pointer;
     padding: 8px;
     border-radius: 8px;
@@ -72,19 +72,19 @@
 
 @media (max-width: 768px) {
     .seccion-nav {
-        position: sticky; /* mantiene comportamiento */
+        position: sticky; 
     }
 
-    /* Muestra el botón hamburguesa */
+   
     .nav-toggle-label {
         display: block;
     }
 
-    /* Menú oculto por defecto en móvil */
+    
     .nav-menu {
         display: none;
         position: absolute;
-        top: 70px; /* debajo de la barra */
+        top: 70px; 
         right: 20px;
         flex-direction: column;
         gap: 12px;
