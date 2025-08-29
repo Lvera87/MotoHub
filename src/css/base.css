@@ -1,17 +1,16 @@
-/* base.css — reset y normalizaciones globales */
-/* Box sizing */
+
 *, *::before, *::after {
   box-sizing: border-box;
 }
 
-/* Resetar márgenes/padding predeterminados */
+
 html, body {
   margin: 0;
   padding: 0;
   height: 100%;
 }
 
-/* Tipografía base (heredada por páginas) */
+
 body {
   font-family: Inter, 'Segoe UI', Roboto, Arial, sans-serif;
   color: #222;
@@ -20,18 +19,18 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Normalizar imágenes y botones */
+
 img { max-width: 100%; display: block; }
 button { font-family: inherit; }
 
-/* Normalizar la barra de navegación para que todas las páginas la muestren igual */
+
 .seccion-nav {
-  height: 90px; /* altura fija para consistencia */
+  height: 90px; 
   min-height: 72px;
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  padding: 0 24px; /* padding horizontal consistente */
+  
+  
+  
+   /* padding horizontal consistente */
 }
 
 /* Logo consistente */
@@ -50,6 +49,7 @@ button { font-family: inherit; }
   align-items: center;
   justify-content: center;
   padding: 6px;
+  cursor: pointer;
 }
 .botones-carrito-buscar img { width: 28px; height: 28px; }
 

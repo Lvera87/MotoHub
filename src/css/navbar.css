@@ -3,10 +3,9 @@
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: rgba(45, 44, 44, 0.8);
+    background-color: rgba(15, 14, 13, 0.84);
     position: sticky;
     top: 0;
-    z-index: 100;
 }
 
 .nav-menu {
@@ -23,15 +22,14 @@
     color: rgba(251, 246, 246, 0.8);
     font-size: 15px;
     font-weight: 500;
-    border: solid 1px rgb(31, 73, 239);
+    border: none;
     padding: 8px;
     border-radius: 8px;
 }
 .logo img {
-    width: 60px;
+    width: 170px;
     height: 60px;
-    border-radius: 40px;
-    border: solid 2px rgb(31, 73, 239);
+
 }
 .carrito {
     width: 30px;
@@ -49,4 +47,55 @@
     height: 30px;
     background-color: transparent;
     color: azure;
+}
+
+
+.nav-toggle {
+    display: none; 
+}
+
+.nav-toggle-label {
+    display: none;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid rgb(31, 73, 239);
+}
+
+.nav-toggle-label .bar {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background: rgba(251, 246, 246, 0.9);
+    margin: 5px 0;
+}
+
+@media (max-width: 768px) {
+    .seccion-nav {
+        position: sticky; 
+    }
+
+   
+    .nav-toggle-label {
+        display: block;
+    }
+
+    
+    .nav-menu {
+        display: none;
+        position: absolute;
+        top: 70px; 
+        right: 20px;
+        flex-direction: column;
+        gap: 12px;
+        padding: 12px;
+        background-color: rgba(45, 44, 44, 0.95);
+        border: 1px solid rgba(255,255,255,0.1);
+        border-radius: 10px;
+    }
+
+    /* Al marcar el checkbox, mostrar menú */
+    #nav-toggle:checked ~ nav .nav-menu {
+        display: flex;
+    }
 }

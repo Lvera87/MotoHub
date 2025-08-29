@@ -1,0 +1,78 @@
+/* Estilos simples para la página de Registro */
+
+/* Layout general */
+body.register-page {
+    font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    background: #f5f7fb;
+    color: #1f2937;
+    min-height: 100vh;
+    margin: 0;
+    display: grid;
+    place-items: center;
+  }
+  
+  /* Contenedor visual del formulario */
+  #registroForm {
+    margin: 20px;
+    width: 100%;
+    max-width: 420px;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  }
+  
+  h2 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 16px;
+    font-size: 1.6rem;
+    color: #111827;
+  }
+  
+  /* Inputs */
+  #registroForm input {
+    
+  }
+  
+  #registroForm input:focus {
+    border-color: #059669; 
+    box-shadow: 0 0 0 3px rgba(5, 150, 105, 0.15);
+  }
+  
+  /* Botón principal */
+  #registroForm button{
+    width: 100%;
+    padding: 12px 14px;
+    margin-top: 12px;
+    color: #202020c3;
+    border: solid 2px #05c7d9;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    
+  }
+  
+  #registroForm button:hover {
+    filter: blur(2px);
+  }
+  
+  
+  
+  
+  #mensaje {
+    max-width: 420px;
+    margin: 10px auto 0 auto;
+    color: #28cddf; 
+    font-size: 0.95rem;
+    min-height: 20px;
+  }
+  
+  
+  @media (max-width: 480px) {
+    #registroForm {
+      padding: 20px;
+    }
+  }
+  
