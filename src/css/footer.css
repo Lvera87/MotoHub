@@ -1,140 +1,53 @@
 /* ================= FOOTER BASE ================= */
 .footer {
   background-color: #000000;
-  color: #ca1313;
+  color: #332323;
   font-family: 'Segoe UI', Tahoma, sans-serif;
-  padding: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-/* ================= BLOQUE SUPERIOR (DISEÑADA) ================= */
-.footer-top {
+
+.facebook-icon {
   display: flex;
   align-items: center;
-  background: #b71c1c;
-  height: 200px;
-  padding-left: 30px;
+  justify-content: center;
+  width: 50px;
+  height: auto;  
 }
 
-.footer-designed {
-  color: #fff;
-  font-family: 'Bebas Neue', sans-serif;
+.gmail-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: auto;
 }
 
-.footer-designed h2 {
-  font-size: 36px;
-  margin: 0;
-}
+.linkedin-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: auto; 
 
-.footer-designed p {
-  font-size: 18px;
-  line-height: 1.5;
-  margin-top: 10px;
-  font-family: 'Segoe UI', cursive;
-}
-
-/* ================= FOOTER TARJETAS ================= */
-.footer-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-  gap: 15px;
-  max-width: 1000px;
-  margin: 30px auto 0 auto;
-  padding: 20px;
-}
-
-.footer-col-1, 
-.footer-col-2 {
-  padding: 15px;
-  border-radius: 10px;
-  font-size: 14px;
-  transition: transform 0.3s ease;
-}
-
-.footer-col-1:hover, 
-.footer-col-2:hover {
-  transform: translateY(-5px);
-}
-
-/* Colores de fondo */
-.custom-bg-1 { background-color: #F24150; }
-.custom-bg-2 { background-color: #39AB4A; }
-.custom-bg-3 { background-color: #75C6CF; }
-.custom-bg-4 { background-color: #F25430; }
-.custom-bg-5 { background-color: #F9B02F; }
-
-/* Slogan */
-.company-slogan {
-  font-size: 14px;
-  color: #fff;
-  margin: 15px 0;
-}
-
-/* Iconos e imágenes */
-.footer-logo-container1 img,
-.footer-logo-container2 img,
-.footer-logo-container3 img,
-.footer-logo-container4 img,
-.footer-logo-container5 img {
-  width: 40px;
-  height: 40px;
-  object-fit: contain;
-  transition: transform 0.3s ease;
-}
-
-.footer-logo-container1 img:hover,
-.footer-logo-container2 img:hover,
-.footer-logo-container3 img:hover,
-.footer-logo-container4 img:hover,
-.footer-logo-container5 img:hover {
-  transform: scale(1.1);
-}
-
-/* Textos de cada columna */
-.footer h4 {
-  font-size: 16px;
-  margin-bottom: 15px;
-  font-weight: 700;
-  color: white;
-  text-transform: uppercase;
-}
-
-.footer ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.footer ul li {
-  margin-bottom: 8px;
-}
-
-.footer ul li a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 14px;
-  transition: color 0.3s ease;
-}
-
-.footer ul li a:hover {
-  color: #000;
-  font-weight: bold;
 }
 
 /* ================= FORMULARIO DE OBSERVACIONES ================= */
 .footer-feedback-container {
-  display: flex;
-  justify-content: center;
-  margin: 20px auto;
   padding: 20px;
+  display: flex;
+  align-items: center;
 }
 
-.footer-feedback {
-  background: rgba(0,0,0,0.7);
-  padding: 20px;
-  border-radius: 10px;
-  width: 100%;
-  max-width: 600px;
-  text-align: center;
+.logos {
+ display: flex;
+ align-items: center;
+ margin-top: 30px;
+  
+  gap: 30px;
 }
 
 .footer-feedback h3 {
@@ -145,20 +58,21 @@
 .footer-feedback form {
   display: flex;
   flex-direction: column;
+  margin: 0px auto;
   gap: 10px;
+  width: 91%;
 }
 
 .footer-feedback input,
 .footer-feedback textarea {
-  padding: 10px;
-  border-radius: 6px;
-  border: none;
-  width: 100%;
-}
 
-.footer-feedback textarea {
-  min-height: 70px;
-  resize: none;
+  font-size: 14px;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  background: rgb(255, 255, 255);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
 }
 
 .footer-feedback button {
