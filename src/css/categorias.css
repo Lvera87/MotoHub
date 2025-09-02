@@ -88,6 +88,14 @@ button {
   text-align: center;
   margin-bottom: 10px;
 }
+.categorias-nav ul a {
+
+  text-decoration: none;
+  color: black;
+  margin-bottom: 50px;
+  
+
+}
 
 .categorias-nav ul {
   list-style: none;
@@ -95,14 +103,20 @@ button {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 00px;
+  gap: 0px;
 }
 
 .categorias-nav li {
   display: inline-block;
+
 }
 
+.category-list {
 
+gap: 200px;
+  
+
+}
 
 
 
