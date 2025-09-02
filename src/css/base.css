@@ -1,36 +1,30 @@
-
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
-
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   height: 100%;
 }
 
-
 body {
-  font-family: Inter, 'Segoe UI', Roboto, Arial, sans-serif;
+  font-family: Inter, "Segoe UI", Roboto, Arial, sans-serif;
   color: #222;
   background: #fff;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-
-img { max-width: 100%; display: block; }
-button { font-family: inherit; }
-
-
-.seccion-nav {
-  height: 90px; 
-  min-height: 72px;
-  
-  
-  
-   /* padding horizontal consistente */
+img {
+  max-width: 100%;
+  display: block;
+}
+button {
+  font-family: inherit;
 }
 
 /* Logo consistente */
@@ -41,7 +35,6 @@ button { font-family: inherit; }
   border-radius: 50%;
 }
 
-/* Forzar la altura de los botones de acción (carrito/avatar) */
 .botones-carrito-buscar {
   height: 44px;
   width: 44px;
@@ -51,20 +44,30 @@ button { font-family: inherit; }
   padding: 6px;
   cursor: pointer;
 }
-.botones-carrito-buscar img { width: 28px; height: 28px; }
-
-/* Enlaces del menú */
-.nav-menu li a {
-  padding: 8px 12px;
-  display: inline-block;
+.botones-carrito-buscar img {
+  width: 28px;
+  height: 28px;
 }
 
 /* Asegurar que el nav sticky no cause salto visual entre páginas */
-.seccion-nav[style], .seccion-nav { position: sticky; top: 0; z-index: 100; }
+.seccion-nav[style],
+.seccion-nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
 
-/* Pequeños ajustes responsivos */
 @media (max-width: 680px) {
-  .seccion-nav { height: 64px; padding: 0 12px; }
-  .logo img { width: 48px; height: 48px; }
-  .botones-carrito-buscar { height: 40px; width: 40px; }
+  .seccion-nav {
+    height: 64px;
+    padding: 0 12px;
+  }
+  .logo img {
+    width: 48px;
+    height: 48px;
+  }
+  .botones-carrito-buscar {
+    height: 40px;
+    width: 40px;
+  }
 }

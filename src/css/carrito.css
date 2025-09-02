@@ -10,7 +10,6 @@
   --cart-danger: #ef4444;
 }
 
-/* Evitar scroll de fondo cuando el panel está abierto */
 body.no-scroll {
   overflow: hidden;
 }

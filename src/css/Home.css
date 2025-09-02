@@ -24,30 +24,25 @@ body {
   text-align: center;
 }
 
-
 .hero {
   width: 100%;
-  height: 400px;
+  height: 600px;
   padding: 80px 20px;
   position: relative;
-  background-image: url(/src/assets/images/cascos.jpg);
+  background-image: url(/src/assets/images/hero4.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   margin-top: 0;
-  
 }
-
 
 .hero::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.4), rgba(0,0,0,0.15));
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.641));
   pointer-events: none;
-  
 }
-
 
 @media (max-width: 992px) {
   .hero {
@@ -63,8 +58,8 @@ body {
     padding: 40px 12px;
   }
   .seccion-hero {
-    width: 600px;
-    margin: 0 auto;
+    width: 60px;
+    margin-left: 40px;
     padding: 16px;
     border-radius: 14px;
   }
@@ -73,38 +68,101 @@ body {
 .seccion-hero {
   padding: 20px;
   background-color: rgba(255, 255, 255, 0.104);
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(3px);
   -webkit-backdrop-filter: blur(10px);
-  color: #ddd;
+  color: #ffffff;
   border-radius: 20px;
   position: relative;
-  z-index: 1; 
+  z-index: 1;
   width: 700px;
-  margin: 0 auto;
+  margin: 0 40px;
+  text-align: left;
+}
+.seccion-hero button {
+  margin-right: 10px;
+  gap: 20px;
 }
 .seccion-hero p {
   margin: 20px;
+  font-size: 20px;
+  font-weight: 400;
+}
+.titulo-hero strong {
+  color: #ec7810;
 }
 
 .titulo-hero {
   margin: 20px;
+  font-size: 60px;
+}
+
+#btn-explorar {
+  padding: 15px 25px;
+  border-radius: 10px;
+  border: solid 2px white;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  font-weight: 400;
+  background-color: #9595951a;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  font-size: 15px;
+}
+#btn-comprar {
+  border: none;
+  padding: 15px 25px;
+  border-radius: 8px;
+  background-color: #ec7810;
+  cursor: pointer;
+  color: #e9e6e6;
+  font-size: 15px;
 }
 
 .categorias {
   padding: 40px 120px;
 }
+.categorias h3 {
+  margin-top: 20px;
+  font-size: 30px;
+}
 
 .grid-categorias {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 8px;
   margin-top: 25px;
+  gap: 30px;
 }
 
 .cat {
-  background: #ccc;
-  height: 80px;
+  background: #ffffff;
+  height: 370px;
   border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(67, 66, 66, 0.307);
+  margin-top: 30px;
+}
+.cat h3 {
+  font-size: 20px;
+  margin-top: 15px;
+}
+.cat img {
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.logo-cat {
+  width: 50px;
+  height: auto;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #fbbe5de1;
+  border-radius: 50%;
 }
 
 .productos {
@@ -126,14 +184,14 @@ body {
   flex-direction: column;
   align-items: stretch;
   gap: 10px;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
   border: 1px solid var(--gris-borde);
-  transition: transform .2s ease, box-shadow .2s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .prod:hover {
   transform: translateY(-4px);
-  box-shadow: 0 10px 26px rgba(0,0,0,0.10);
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.1);
 }
 
 .img-prod {
@@ -152,32 +210,37 @@ body {
   color: #393737;
 }
 
-#btn-explorar {
-  padding: 8px;
-  border-radius: 10px;
-  border: solid 2px #39ab4a;
-  cursor: pointer;
+.prod h2 {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--gris-texto);
+  margin: 6px 0 2px;
+  text-align: left;
 }
-#btn-comprar {
-  border: solid 2px #f24150;
-  padding: 8px;
-  border-radius: 10px;
-  background-color: #f24150;
-  cursor: pointer;
-  color: #e9e6e6;
+.prod p {
+  font-size: 14px;
+  color: var(--gris-suave);
+  margin: 0;
+  text-align: left;
 }
-  
+.prod .price {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--gris-texto);
+  margin-top: 6px;
+}
 
-
-.prod h2 { font-size: 16px; font-weight: 600; color: var(--gris-texto); margin: 6px 0 2px; text-align: left; }
-.prod p { font-size: 14px; color: var(--gris-suave); margin: 0; text-align: left; }
-.prod .price { font-size: 16px; font-weight: 700; color: var(--gris-texto); margin-top: 6px; }
-
-.prod p:last-of-type { font-weight: 700; color: var(--gris-texto); }
+.prod p:last-of-type {
+  font-weight: 700;
+  color: var(--gris-texto);
+}
 
 /* Responsive grid for productos */
 @media (max-width: 1200px) {
-  .grid-productos { grid-template-columns: repeat(3, 1fr); margin: 24px 40px; }
+  .grid-productos {
+    grid-template-columns: repeat(3, 1fr);
+    margin: 24px 40px;
+  }
 }
 
 .comprar {
@@ -190,7 +253,10 @@ body {
   margin-top: 10px;
 }
 
-.prod p:last-of-type { font-weight: 700; color: var(--gris-texto); }
+.prod p:last-of-type {
+  font-weight: 700;
+  color: var(--gris-texto);
+}
 
 .footer {
   background-color: #1c1c1c;
@@ -207,36 +273,44 @@ body {
   margin: 0 auto;
 }
 
-.footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4, .footer-col-5 {
+.footer-col-1,
+.footer-col-2,
+.footer-col-3,
+.footer-col-4,
+.footer-col-5 {
   padding: 20px;
   border-radius: 8px;
   transition: transform 0.3s ease;
 }
 
 /* Lift effect on hover */
-.footer-col-1:hover, .footer-col-2:hover, .footer-col-3:hover, .footer-col-4:hover, .footer-col-5:hover {
+.footer-col-1:hover,
+.footer-col-2:hover,
+.footer-col-3:hover,
+.footer-col-4:hover,
+.footer-col-5:hover {
   transform: translateY(-5px);
 }
 
 /* Footer color helpers */
 .custom-bg-1 {
-  background-color: #F24150;
+  background-color: #f24150;
 }
 
 .custom-bg-2 {
-  background-color: #39AB4A;
+  background-color: #39ab4a;
 }
 
 .custom-bg-3 {
-  background-color: #75C6CF;
+  background-color: #75c6cf;
 }
 
 .custom-bg-4 {
-  background-color: #F25430;
+  background-color: #f25430;
 }
 
 .custom-bg-5 {
-  background-color: #F9B02F;
+  background-color: #f9b02f;
 }
 
 .footer .logo {
@@ -348,8 +422,6 @@ body {
 .footer-logo-container5 img:hover {
   transform: scale(1.1);
 }
-
-
 
 .footer h4 {
   font-size: 16px;

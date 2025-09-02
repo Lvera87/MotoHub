@@ -1,101 +1,110 @@
 .seccion-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: rgba(15, 14, 13, 0.84);
-    position: sticky;
-    top: 0;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 20px;
 }
 
 .nav-menu {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px;
+  list-style: none;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
 }
 .nav-menu li a {
-    text-decoration: none;
-    color: rgba(251, 246, 246, 0.8);
-    font-size: 15px;
-    font-weight: 500;
-    border: none;
-    padding: 8px;
-    border-radius: 8px;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.83);
+  font-size: 15px;
+  font-weight: 500;
+  border: none;
+  padding: 8px;
+  border-radius: 8px;
+}
+.nav-menu li a:hover {
+  color: rgba(255, 68, 0, 0.916);
+}
+
+.nav-menu li a strong {
+  color: rgba(255, 68, 0, 0.916);
+}
+.seccion-nav ::after {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 2px;
+  background-color: orangered;
+  left: 37.6%;
+  top: 50px;
+  z-index: 0;
 }
 .logo img {
-    width: 170px;
-    height: 60px;
-
+  width: 170px;
+  height: 60px;
 }
 .carrito {
-    width: 30px;
-    height: 30px;
-    background-color: transparent;
-    color: azure;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  color: azure;
 }
 .botones-carrito-buscar {
-    background-color: rgba(250, 247, 247, 0.227);
-    border-radius: 12px;
-    border-bottom: solid 3px rgb(31, 73, 239);
+  background-color: rgba(250, 247, 247, 0.227);
+  border: none;
 }
 .avatar {
-    width: 30px;
-    height: 30px;
-    background-color: transparent;
-    color: azure;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  color: azure;
 }
 
-
 .nav-toggle {
-    display: none; 
+  display: none;
 }
 
 .nav-toggle-label {
-    display: none;
-    cursor: pointer;
-    padding: 8px;
-    border-radius: 8px;
-    border: 1px solid rgb(31, 73, 239);
+  display: none;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid rgb(31, 73, 239);
 }
 
 .nav-toggle-label .bar {
-    display: block;
-    width: 24px;
-    height: 2px;
-    background: rgba(251, 246, 246, 0.9);
-    margin: 5px 0;
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: rgba(251, 246, 246, 0.9);
+  margin: 5px 0;
 }
 
 @media (max-width: 768px) {
-    .seccion-nav {
-        position: sticky; 
-    }
+  .seccion-nav {
+    position: sticky;
+  }
 
-   
-    .nav-toggle-label {
-        display: block;
-    }
+  .nav-toggle-label {
+    display: block;
+  }
 
-    
-    .nav-menu {
-        display: none;
-        position: absolute;
-        top: 70px; 
-        right: 20px;
-        flex-direction: column;
-        gap: 12px;
-        padding: 12px;
-        background-color: rgba(45, 44, 44, 0.95);
-        border: 1px solid rgba(255,255,255,0.1);
-        border-radius: 10px;
-    }
+  .nav-menu {
+    display: none;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    flex-direction: column;
+    gap: 12px;
+    padding: 12px;
+    background-color: rgba(45, 44, 44, 0.95);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+  }
 
-    /* Al marcar el checkbox, mostrar menú */
-    #nav-toggle:checked ~ nav .nav-menu {
-        display: flex;
-    }
+  /* Al marcar el checkbox, mostrar menú */
+  #nav-toggle:checked ~ nav .nav-menu {
+    display: flex;
+  }
 }
