@@ -37,20 +37,31 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // 🟢 Banner dinámico según categoría
-    function showCategoryBanner(category) {
-        const bannerContainer = document.getElementById('category-banner');
-        if (!bannerContainer) return;
+    // 🟢 Banner dinámico según categoría (motos, cascos, accesorios, botas)
+function showCategoryBanner(category) {
+    const bannerContainer = document.getElementById('category-banner');
+    if (!bannerContainer) return;
 
-        bannerContainer.innerHTML = ''; // limpiar antes
+    bannerContainer.innerHTML = ''; // limpiar antes
 
-        if (category && category !== "all") {
-            const img = document.createElement('img');
-            img.src = `/src/assets/banners/${category.toLowerCase()}.png`; // ruta del banner
-            img.alt = `Sección ${category}`;
-            img.classList.add('banner-img');
-            bannerContainer.appendChild(img);
-        }
+    // Lista de categorías válidas
+    const validCategories = ["motos", "cascos", "accesorios", "botas"];
+
+    if (category && category !== "all" && validCategories.includes(category.toLowerCase())) {
+        const img = document.createElement('img');
+        img.src = `/src/assets/banners/${category.toLowerCase()}.png`; // ejemplo: botas.png
+        img.alt = `Sección ${category}`;
+        img.classList.add('banner-img');
+        bannerContainer.appendChild(img);
+    } else if (category === "all" || category === "todo") {
+        const img = document.createElement('img');
+       // imagen general para "todo"
+        img.alt = "Todos los productos";
+        img.classList.add('banner-img');
+        bannerContainer.appendChild(img);
     }
+}
+
 
     // Cargar productos con filtro
     function loadProducts(category = "all") {
@@ -146,17 +157,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // 🟢 Filtro con enlaces de categorías (<ul id="category-list">)
-    const categoryList = document.getElementById('category-list');
-    if (categoryList) {
-        categoryList.addEventListener("click", (e) => {
-            if (e.target.tagName === "A") {
-                e.preventDefault();
-                const category = e.target.getAttribute("data-category");
-                loadProducts(category);
-            }
-        });
-    }
+   
 
     // 🚀 Al cargar: revisar si viene ?cat= en la URL
     const params = new URLSearchParams(window.location.search);
