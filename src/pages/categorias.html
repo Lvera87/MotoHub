@@ -1,47 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Categorías</title>
-  <link rel="stylesheet" href="/src/css/categorias.css" />
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Categorías</title>
+    <link rel="stylesheet" href="/src/css/categorias.css" />
+    <link rel="stylesheet" href="/src/css/base.css" />
+    <link rel="stylesheet" href="/src/css/navbar.css" />
+  </head>
+  <body>
+    <div class="seccion-nav">
+      <div class="logo">
+        <img src="/src/assets/images/Logosinfondo.png" alt="Logo MotoHub" />
+      </div>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+      <label for="nav-toggle" class="nav-toggle-label" aria-label="Abrir menú">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </label>
+      <nav class="navbar">
+        <ul class="nav-menu" id="nav-menu">
+          <li>
+            <a href="/src/pages/Home.html" class="active">Inicio</a>
+          </li>
+          <li>
+            <a href="/src/pages/categorias.html">Catálogo</a>
+          </li>
+          <li><a href="/src/pages/acercaNosotros.html">Servicios</a></li>
+          <li><a href="/src/pages/Contactenos.html">Contacto</a></li>
+          <li><a href="/src/pages/acercaNosotros.html">Acerca de</a></li>
+        </ul>
+      </nav>
+      <div class="">
+        <button class="botones-carrito-buscar" aria-label="Carrito">
+          <img
+            src="/src/assets/images/carrito-de-compras.png"
+            class="carrito"
+            alt="Carrito"
+          />
+        </button>
+        <button class="botones-carrito-buscar" aria-label="Cuenta">
+          <img
+            src="/src/assets/images/avatar.png"
+            class="avatar"
+            alt="Avatar"
+          />
+        </button>
+      </div>
+    </div>
+    <section class="banner-video">
+      <video autoplay muted loop playsinline class="banner-video-bg">
+        <source src="/src/assets/videos/moto.mp4" type="video/mp4" />
+      </video>
+      <div class="banner-video-content">
+        <h2>Explora nuestras categorías</h2>
+        <p>Encuentra tu estilo en el mundo de las motos</p>
+      </div>
+    </section>
+    <section class="categorias">
+      <h1 class="titulo">Mas categorias</h1>
 
+      <!-- 🟢 Categorías de filtro -->
+      <nav class="categorias-nav">
+        <ul id="category-list">
+          <li><a href="#" data-category="all">Todas</a></li>
+          <li><a href="#" data-category="Vintage">Vintage</a></li>
+          <li><a href="#" data-category="Urban">Urban</a></li>
+          <li><a href="#" data-category="Enduro">Enduro</a></li>
+          <li><a href="#" data-category="Touring">Touring</a></li>
+          <li><a href="#" data-category="Cruiser">Cruiser</a></li>
+          <li><a href="#" data-category="EVO">EVO</a></li>
+        </ul>
+      </nav>
 
-  <section class="banner-video">
-  <video autoplay muted loop playsinline class="banner-video-bg">
-    <source src="/src/assets/videos/moto.mp4" type="video/mp4">
-    
-  </video>
-  <div class="banner-video-content">
-    <h2>Explora nuestras categorías</h2>
-    <p>Encuentra tu estilo en el mundo de las motos</p>
-  </div>
-</section>
-  <section class="categorias">
-    <h1 class="titulo"> Mas categorias</h1>
+      <!-- 🟢 Banner dinámico -->
+      <div id="category-banner"></div>
 
-    <!-- 🟢 Categorías de filtro -->
-    <nav class="categorias-nav">
-      <ul id="category-list">
-        <li><a href="#" data-category="all">Todas</a></li>
-        <li><a href="#" data-category="Vintage">Vintage</a></li>
-        <li><a href="#" data-category="Urban">Urban</a></li>
-        <li><a href="#" data-category="Enduro">Enduro</a></li>
-        <li><a href="#" data-category="Touring">Touring</a></li>
-        <li><a href="#" data-category="Cruiser">Cruiser</a></li>
-        <li><a href="#" data-category="EVO">EVO</a></li>
-      </ul>
-    </nav>
+      <!-- 🟢 Grid de productos -->
+      <div id="product-grid" class="grid-productos"></div>
+    </section>
 
-    <!-- 🟢 Banner dinámico -->
-    <div id="category-banner"></div>
-
-    <!-- 🟢 Grid de productos -->
-    <div id="product-grid" class="grid-productos"></div>
-  </section>
-
-  <script src="/src/js/categorias.js"></script>
-</body>
+    <script src="/src/js/categorias.js"></script>
+  </body>
 </html>

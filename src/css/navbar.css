@@ -28,18 +28,8 @@
 }
 
 .nav-menu li a strong {
-  color: rgba(255, 68, 0, 0.916);
 }
-.seccion-nav ::after {
-  content: "";
-  position: absolute;
-  width: 60px;
-  height: 2px;
-  background-color: orangered;
-  left: 37.6%;
-  top: 50px;
-  z-index: 0;
-}
+
 .logo img {
   width: 170px;
   height: 60px;
@@ -107,4 +97,8 @@
   #nav-toggle:checked ~ nav .nav-menu {
     display: flex;
   }
+}
+.nav-menu a.active {
+  position: relative;
+  color: rgba(255, 68, 0, 0.916);
 }
