@@ -86,7 +86,15 @@ button {
 /* Menú de categorías */
 .categorias-nav {
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+}
+.categorias-nav ul a {
+
+  text-decoration: none;
+  color: black;
+  margin-bottom: 50px;
+  
+
 }
 
 .categorias-nav ul {
@@ -95,26 +103,22 @@ button {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 15px;
+  gap: 0px;
 }
 
 .categorias-nav li {
   display: inline-block;
+
 }
 
-.categorias-nav a {
-  text-decoration: none;
-  background: #007bff;
-  color: #fff;
-  padding: 8px 15px;
-  border-radius: 20px;
-  transition: background 0.3s, transform 0.2s;
+.category-list {
+
+gap: 200px;
+  
+
 }
 
-.categorias-nav a:hover {
-  background: #0056b3;
-  transform: scale(1.05);
-}
+
 
 /* Estado activo */
 .categorias-nav a.active {
@@ -175,3 +179,40 @@ button {
 .banner-video-content p {
   font-size: 1.2rem;
 }
+
+.categorias-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  padding: 0;
+  margin: 0;
+}
+
+.categorias-nav li a img {
+  width: 60px;   /* ajusta según el tamaño de tu icono */
+  height: auto;
+  transition: transform 0.2s ease;
+}
+
+.categorias-nav li a img:hover {
+  transform: scale(1.1); /* efecto de agrandar al pasar el mouse */
+}
+
+#category-banner {
+  width: 100vw;       /* ancho completo de la pantalla */
+  margin: 0;          /* sin márgenes */
+  padding: 0;         /* sin padding */
+  position: relative; 
+  left: 50%;          /* truco para corregir el scroll */
+  right: 50%;
+  margin-left: -50vw; 
+  margin-right: -50vw;
+}
+
+#category-banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
