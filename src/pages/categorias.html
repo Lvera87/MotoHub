@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Categorías</title>
+  <link rel="stylesheet" href="/src/css/categorias.css" />
+  <link rel="stylesheet" href="/src/css/navbar.css" />
+</head>
+<body>
+  <div class="seccion-nav">
+        <div class="logo">
+        <img src="/src/assets/images/logo.png" alt="Logo MotoHub" />
+    </div>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+    <label for="nav-toggle" class="nav-toggle-label" aria-label="Abrir menú">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </label>
+    <nav class="navbar">
+        <ul class="nav-menu" id="nav-menu">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Catálogo</a></li>
+            <li><a href="#./acercaNosotros.html">Servicios</a></li>
+            <li><a href="#">Contacto</a></li>
+            <li><a href="#">Acerca de</a></li>
+        </ul>
+    </nav>
+    <div class="">
+        <button class="botones-carrito-buscar" aria-label="Carrito">
+            <img src="/src/assets/images/carrito-de-compras.png" class="carrito" alt="Carrito" />
+        </button>
+        <button class="botones-carrito-buscar" aria-label="Cuenta">
+            <img src="/src/assets/images/avatar.png" class="avatar" alt="Avatar" />
+        </button>
+    </div>
+    </div>
+
+  <section class="banner-video">
+  <img src="../assets/images/categorias.png" alt="Todas" />
+  <div class="banner-video-content">
+    <h2>Explora nuestras categorías</h2>
+    <p>Encuentra tu estilo en el mundo de las motos</p>
+  </div>
+</section>
+  <section class="categorias">
+   
+    <!-- 🟢 Categorías de filtro -->
+    <div class="categorias-nav">
+  <ul id="category-list">
+    <li>
+      <a href="#" data-category="all">
+        <img src="../assets/images/todo.png" alt="Todas" />
+        <h1 class="h1">Todas</h1>
+      </a>
+    </li>
+    <li>
+      <a href="#" data-category="motos">
+        <img src="../assets/images/moto_categoria.png" alt="Motos" />
+        <h1>Motos</h1>
+      </a>
+    </li>
+    <li>
+      <a href="#" data-category="Urban">
+        <img src="../assets/images/casco.png" alt="Urban" />
+        <h1>Casco</h1>
+      </a>
+    </li>
+    <li>
+      <a href="#" data-category="Enduro">
+        <img src="../assets/images/accesorios.png" alt="Enduro" />
+        <h1>accesorios</h1>
+      </a>
+    </li>
+    <li>
+      <a href="#" data-category="Touring">
+        <img src="../assets/images/chaqueta.png" alt="Touring" />
+        <h1>chaquetas</h1>
+      </a>
+    </li>
+    <li>
+      <a href="#" data-category="Cruiser">
+        <img src="../assets/images/botas.png" alt="Cruiser" />
+        <h1>botas</h1>
+      </a>
+    </li>
+   
+  </ul>
+</div>
+
+
+    <!-- 🟢 Banner dinámico -->
+    <div id="category-banner"></div>
+
+    <!-- 🟢 Grid de productos -->
+    <div id="product-grid" class="grid-productos"></div>
+  </section>
+
+  <script src="/src/js/categorias.js"></script>
+</body>
+</html>

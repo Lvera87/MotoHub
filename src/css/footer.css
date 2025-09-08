@@ -1,0 +1,131 @@
+/* ================= FOOTER BASE ================= */
+.footer {
+  background-color: #000000;
+  color: #332323;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.facebook-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: auto;  
+}
+
+.gmail-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: auto;
+}
+
+.linkedin-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: auto; 
+
+}
+
+/* ================= FORMULARIO DE OBSERVACIONES ================= */
+.footer-feedback-container {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.logos {
+ display: flex;
+ align-items: center;
+ margin-top: 30px;
+  
+  gap: 30px;
+}
+
+.footer-feedback h3 {
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.footer-feedback form {
+  display: flex;
+  flex-direction: column;
+  margin: 0px auto;
+  gap: 10px;
+  width: 91%;
+}
+
+.footer-feedback input,
+.footer-feedback textarea {
+
+  font-size: 14px;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  background: rgb(255, 255, 255);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+}
+
+.footer-feedback button {
+  background: #F24150;
+  border: none;
+  padding: 10px;
+  color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.footer-feedback button:hover {
+  background: #d22f3d;
+}
+
+/* ================= COPYRIGHT ================= */
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid rgba(102, 17, 17, 0.1);
+  margin-top: 30px;
+  padding-top: 15px;
+}
+
+.footer-bottom p {
+  font-size: 13px;
+  margin: 0;
+  color: #aaa;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 992px) {
+  .footer-container { 
+    grid-template-columns: repeat(3, 1fr); 
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-container { 
+    grid-template-columns: repeat(2, 1fr); 
+  }
+  .footer-feedback {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-container { 
+    grid-template-columns: 1fr; 
+    text-align: center; 
+  }
+  .footer-feedback {
+    max-width: 95%;
+  }
+}
